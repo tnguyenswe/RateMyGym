@@ -1,7 +1,7 @@
 ## To Run The App
 
-`
-  git clone\
-  cd into the repo\
-  npm install && npm start
-`
+```
+git clone the repo
+cd into the front-end folder
+npm install && npm run start
+```
