@@ -2,6 +2,8 @@
 
 `
   git clone
+  
   cd into the repo
+  
   npm install && npm start
 `
