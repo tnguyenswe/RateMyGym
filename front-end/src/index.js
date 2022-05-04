@@ -5,12 +5,27 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "theme-ui";
 import theme from "./theme";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Reviews from './routes/reviews';
+import NavBar from './components/NavBar';
+import GymBuddy from './routes/gymBuddy';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/gymBuddy" element={<GymBuddy/>} />
+        </Routes>
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

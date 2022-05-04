@@ -5,7 +5,7 @@ import Headline from '../../Headline';
 
 const CardHref = (props) => (<Link {...props} href="https://www.google.com" sx={{ textDecoration: 'none', color: 'inherit' }}>{props.children}</Link>)
 
-const CardLayout = (props) => (<Flex {...props} sx={{ width: ['280px','260px','280px','300px'], height: '325px', borderRadius: '10px', flexDirection: 'column', border: '2px solid #3e4451', pb: '30px', overflow: 'hidden' }}>{props.children}</Flex>)
+const CardLayout = (props) => (<Flex {...props} sx={{justifySelf: 'center',width: ['280px','260px','280px','300px'], height: '325px', borderRadius: '10px', flexDirection: 'column', border: '2px solid #3e4451', pb: '30px', overflow: 'hidden' }}>{props.children}</Flex>)
 
 const CardBackground = ({background, ...props}) => (<Image src={background} sx={{ maxWidth: ['280px','260px','280px','300px'], height: '150px', width: '100%', objectFit: 'cover' }} />)
 
@@ -13,10 +13,10 @@ const PrimaryImage = ({primary, ...props}) => (<Image src={primary} sx={{ alignS
 
 const TextContainer = (props) => (<Flex {...props} sx={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column', pt: '10px' }}>{props.children}</Flex>)
 
-const PreviewCards = ({ gymName, background, primary, gymAddress, creatorLink }) => {
+const PreviewCards = ({ gymName, background, primary, gymAddress, creatorLink }, props) => {
     return (
         <CardHref>
-            <CardLayout>
+            <CardLayout {...props}>
                 <CardBackground background={background}/>
                 <PrimaryImage primary={primary} />
                 <TextContainer>
