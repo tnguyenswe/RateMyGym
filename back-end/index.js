@@ -9,7 +9,8 @@ const cors = require('cors')
 app.use(express.json())
 app.use(cors());
 
-mongoose.connect("mongodb+srv://mongoUser:oZ3AVPO0AOdBLd1x@cluster0.iq7kq.mongodb.net/RateMyGym?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://rateMyGymUser:kBch3apGciYKXKUp@ratemygymcluster.e1qkr.mongodb.net/RateMyGym?retryWrites=true&w=majority")
+// mongoose.connect("mongodb+srv://mongoUser:oZ3AVPO0AOdBLd1x@cluster0.iq7kq.mongodb.net/RateMyGym?retryWrites=true&w=majority")
 
 app.get('/getReviews', (req, res) => {
     ReviewModel.find({}, (err, result) => {
