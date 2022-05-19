@@ -1,6 +1,5 @@
 /** @jsxImportSource theme-ui */
 import { Flex, Image, Text } from 'theme-ui';
-import { CircleWavyCheck } from 'phosphor-react';
 import Headline from '../../Headline';
 import { Link } from 'react-router-dom';
 

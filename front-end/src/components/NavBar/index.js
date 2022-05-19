@@ -1,8 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Grid, Text } from "theme-ui";
 import React from "react";
-import Headline from '../Headline';
-import SearchBar from '../SearchBar';
 import { Link } from 'react-router-dom';
 
 const NavBar = (props) => {

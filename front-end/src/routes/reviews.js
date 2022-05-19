@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Grid, Text, Label, Box, Input, Textarea, Button, Flex, Image } from "theme-ui";
+import { Grid, Label, Box, Input, Textarea, Button, Flex, Image } from "theme-ui";
 import React from "react";
 import Headline from '../../src/components/Headline';
 import axios from 'axios';
@@ -10,7 +10,6 @@ import { useLocation } from "react-router-dom";
 
 const NavBar = (props) => {
     const location = useLocation();
-    // console.log(location.state);
     const CardsData = location.state
     const [filteredReviews, setFilteredReviews] = useState([]);
 
@@ -21,7 +20,7 @@ const NavBar = (props) => {
                 setFilteredReviews(filteredByReviewURL);
             });
     },
-        []
+        [location.state.reviewURL]
     )
     return (
         <Flex sx={{flexDirection: 'column'}}>

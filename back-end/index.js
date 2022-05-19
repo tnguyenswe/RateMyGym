@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const GymModel = require('./models/Gyms');
 const ReviewModel = require('./models/Reviews');
+const GymBuddyModel = require('./models/GymBuddies');
 
 const cors = require('cors')
 
@@ -47,6 +48,24 @@ app.post("/createGym", async (req, res) => {
     await newGym.save();
 
     res.json(gym)
+})
+
+app.get("/getGymBuddies", (req, res) => {
+    GymBuddyModel.find({}, (err, result) => {
+        if(err){
+            res.json(err);
+        }else{
+            res.json(result);
+        }
+    })
+});
+
+app.post("/createGymBuddy", async (req, res) => {
+    const gymBuddy = req.body;
+    const newGymBuddy = new GymBuddyModel(gymBuddy);
+    await newGymBuddy.save();
+
+    res.json(gymBuddy)
 })
 
 app.listen(3001, () => {

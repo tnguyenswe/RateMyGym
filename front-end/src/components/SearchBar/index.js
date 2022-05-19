@@ -12,7 +12,7 @@ const SearchBar = () => {
             // backgroundImage: `url("https://www.rhianwestbury.co.uk/wp-content/uploads/2019/07/danielle-cerullo-CQfNt66ttZM-unsplash-1440x960.jpg")`
             background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.rhianwestbury.co.uk/wp-content/uploads/2019/07/danielle-cerullo-CQfNt66ttZM-unsplash-1440x960.jpg')`
             }}>
-            <Flex sx={{width: '100%'}} onSubmit={
+            <Flex onSubmit={
                 (e) => {
                     e.preventDefault();
                     console.log(e.target.gymSearch.value);
