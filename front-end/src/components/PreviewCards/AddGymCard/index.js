@@ -3,7 +3,7 @@ import { Flex, Image, Text } from 'theme-ui';
 import Headline from '../../Headline';
 import { Link } from 'react-router-dom';
 
-const CardHref = (props) => (<Link {...props} to={`/gyms/reviews/${props.reviewURL}`} state={{ reviewURL: props.reviewURL, gymName: props.gymName, background: props.background, primary: props.primary, gymAddress: props.gymAddress }} sx={{ textDecoration: 'none', color: 'inherit' }}>{props.children}</Link>)
+const CardHref = (props) => (<Link {...props} to={`/addGym`} state={{ reviewURL: props.reviewURL, gymName: props.gymName, background: props.background, primary: props.primary, gymAddress: props.gymAddress }} sx={{ textDecoration: 'none', color: 'inherit' }}>{props.children}</Link>)
 
 const CardLayout = (props) => (<Flex {...props} sx={{ justifySelf: 'center', width: ['280px', '260px', '280px', '300px'], height: '325px', borderRadius: '10px', flexDirection: 'column', border: '2px solid #3e4451', pb: '30px', overflow: 'hidden' }}>{props.children}</Flex>)
 
@@ -13,7 +13,7 @@ const PrimaryImage = ({ primary, ...props }) => (<Image src={primary} sx={{ alig
 
 const TextContainer = (props) => (<Flex {...props} sx={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column', pt: '10px' }}>{props.children}</Flex>)
 
-const PreviewCards = ({ gymName, background, primary, gymAddress, creatorLink, reviewURL, ...rest }) => {
+const AddGymCard = ({ gymName, background, primary, gymAddress, creatorLink, reviewURL, ...rest }) => {
     return (
         <CardHref reviewURL={reviewURL} gymName={gymName} background={background} primary={primary} gymAddress={gymAddress}>
             <CardLayout {...rest}>
@@ -30,4 +30,4 @@ const PreviewCards = ({ gymName, background, primary, gymAddress, creatorLink, r
     )
 }
 
-export default PreviewCards
+export default AddGymCard

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const ReviewSchema = new mongoose.Schema({
-    title:{
+    reviewURL:{
         type: String,
         required: true
     },
@@ -12,6 +12,10 @@ const ReviewSchema = new mongoose.Schema({
     rating:{
         type: Number,
         required: true
+    },
+    images:{
+        type: String,
+        required: false
     }
 })
 

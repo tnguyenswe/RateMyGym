@@ -1,8 +1,7 @@
 /** @jsxImportSource theme-ui */
-import { Grid, Text, Label, Box, Input, Textarea, Button } from "theme-ui";
+import { Label, Box, Input, Textarea, Button } from "theme-ui";
 import React from "react";
 import Headline from '../Headline';
-import SearchBar from '../SearchBar';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 

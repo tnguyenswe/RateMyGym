@@ -1,16 +1,20 @@
 const mongoose = require('mongoose')
 
 const GymSchema = new mongoose.Schema({
-    name:{
+    gymName:{
         type: String,
         required: true
     },
-    address:{
+    gymAddress:{
         type: String,
         required: true
     },
-    maxOccupancy:{
-        type: Number,
+    background:{
+        type: String,
+        required: true
+    },
+    primary:{
+        type: String,
         required: true
     }
 })
