@@ -6,12 +6,13 @@ import Headline from '../Headline';
 import Reviews from '../Reviews';
 import { Link } from "react-router-dom";
 import GymBuddyImage from '../../images/gymbuddy_image.png';
-
+import SearchBar from '../SearchBar';
 const Body = () => {
     return (
         <Flex sx={{ justifyContent: 'center', flexDirection: 'column', alignItems: 'center', textAlign: 'start' }}>
-            <Headline scale="h3" sx={{ fontWeight: '600', pb: '50px' }}>Top Rated Gyms</Headline>
-            <PreviewCards />
+            {/* <Headline scale="h3" sx={{ fontWeight: '600', pb: '50px' }}>Top Rated Gyms</Headline>
+            <PreviewCards /> */}
+            <SearchBar/>
             <Headline scale="h3" sx={{ fontWeight: '600', pt: '50px' }}>Gym Buddy Finder</Headline>
             <Link to="/gymBuddy"><Image src={GymBuddyImage} sx={{ maxHeight: '300px' }} /></Link>
             {/* <Link to="/expenses">Expenses</Link> */}

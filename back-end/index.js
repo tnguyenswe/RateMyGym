@@ -27,7 +27,6 @@ app.post("/createReview", async (req, res) => {
     const review = req.body;
     const newReview = new ReviewModel(review);
     await newReview.save();
-
     res.json(review)
 })
 

@@ -12,8 +12,6 @@ function App() {
   return (
     <div className="App">
       <Body />
-      <Link to="/reviews" state={{reviewName: "Toms Gym"}}> Reviews </Link> |{" "}
-      <Link to="/gymBuddy">Gym Buddy Finder</Link>
     </div>
   );
 }

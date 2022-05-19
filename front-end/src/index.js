@@ -13,6 +13,8 @@ import {
 import Reviews from './routes/reviews';
 import NavBar from './components/NavBar';
 import GymBuddy from './routes/gymBuddy';
+import Gyms from './routes/gyms';
+import AddGym from './routes/addGym';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,8 +23,10 @@ ReactDOM.render(
         <NavBar />
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/gyms" element={<Gyms/>}/>
+          <Route path="/gyms/reviews/:id" element={<Reviews/>}/>
           <Route path="/gymBuddy" element={<GymBuddy/>} />
+          <Route path="/addGym" element={<AddGym/>} />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>
