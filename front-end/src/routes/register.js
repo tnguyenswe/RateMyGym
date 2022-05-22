@@ -20,7 +20,7 @@ const Register = () => {
                             console.log(res);
                             console.log(res.data);
                         })
-                    alert("Your gym has been added!")
+                    alert("Your information has been registered!")
                 }}>
                 <Headline scale="h3" sx={{ pb: '50px' }}>Register User Information</Headline>
                 <Label htmlFor="username" sx={{ fontSize: '24px', pt: '10px' }}>Username</Label>
