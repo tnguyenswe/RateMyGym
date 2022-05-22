@@ -2,6 +2,7 @@
 import { Grid, Text } from "theme-ui";
 import React from "react";
 import { Link } from 'react-router-dom';
+import { height } from "@mui/system";
 
 const NavBar = (props) => {
     return (
@@ -22,6 +23,8 @@ const NavBar = (props) => {
                 })}
             >
                 <Link to="/" sx={{textDecoration: 'none'}}><Text sx={{ fontWeight: '700', fontSize: 4, color: 'white'}}>RateMy<Text sx={{ fontWeight: '700', fontSize: 4, color: (theme) => theme.mainColors.blue50 }}>Gym</Text></Text></Link>
+                <Link to="/register" ><Text style={{ position: 'absolute', right: 80, top: 30}}> Register </Text></Link>
+                <Link to="/login" > <Text  style={{ position: 'absolute', right: 30, top: 30}}> Login </Text></Link>
                 {/* <SearchBar /> */}
                 {/* <Text sx={{ fontWeight: '700', fontSize: 3 }}>Write A Review</Text> */}
             </Grid>
