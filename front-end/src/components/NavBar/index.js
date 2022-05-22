@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Grid, Text } from "theme-ui";
+import { Grid, Text, Box } from "theme-ui";
 import React from "react";
 import { Link } from 'react-router-dom';
 
@@ -23,6 +23,11 @@ const NavBar = (props) => {
             >
                 <Link to="/" sx={{textDecoration: 'none'}}><Text sx={{ fontWeight: '700', fontSize: 4, color: 'white'}}>RateMy<Text sx={{ fontWeight: '700', fontSize: 4, color: (theme) => theme.mainColors.blue50 }}>Gym</Text></Text></Link>
                 {/* <SearchBar /> */}
+                <Box/>
+                <Box>
+                <Link to="/register" sx={{textDecoration: 'none', color: 'white', px: '10px'}}> Register </Link>
+                <Link to="/sign-in" sx={{textDecoration: 'none', color: 'white'}}> Sign In </Link>
+                </Box>
                 {/* <Text sx={{ fontWeight: '700', fontSize: 3 }}>Write A Review</Text> */}
             </Grid>
         </React.Fragment>
