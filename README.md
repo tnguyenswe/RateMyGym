@@ -20,7 +20,7 @@ From there, you will need to have 2 terminal windows open. In one:
 In the other
 
 ```
-  cd back-end
+  cd front-end
   npm install
   npm run start
 ```
