@@ -15,6 +15,8 @@ import NavBar from './components/NavBar';
 import GymBuddy from './routes/gymBuddy';
 import Gyms from './routes/gyms';
 import AddGym from './routes/addGym';
+import SignIn from './routes/signIn';
+import Register from './routes/register';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,6 +29,8 @@ ReactDOM.render(
           <Route path="/gyms/reviews/:id" element={<Reviews/>}/>
           <Route path="/gymBuddy" element={<GymBuddy/>} />
           <Route path="/addGym" element={<AddGym/>} />
+          <Route path="/sign-in" element={<SignIn/>} />
+          <Route path="/register" element={<Register/>} />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>
