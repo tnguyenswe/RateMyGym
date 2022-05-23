@@ -29,4 +29,4 @@ Then you can navigate to http://localhost:3000/ to view the front end.
 
 **Home screen preview**
 
-<img width="1269" alt="Screen Shot 2022-05-21 at 5 36 23 PM" src="https://user-images.githubusercontent.com/50594012/169673504-d496a319-2004-44ff-991d-ec4d5b25e362.png">
+![homepage](https://user-images.githubusercontent.com/89228953/169892477-1a76d051-8281-47fe-8cb8-863e2deb8004.png)
