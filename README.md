@@ -1,9 +1,10 @@
 # RateMyGym
 
-In order to run the full stack web app, you will need to run the back end and front end simultaneously.
+In order to run the full stack web app, you will need to download and install Node.js and npm, then run the back end and front end simultaneously.
 
-Follow the commands to do so:
+Reference for downloading Node.js and npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
+After downloading Node.js and npm to your device, follow the commands to do so:
 ```
   git clone https://github.com/tnguyenswe/RateMyGym.git
   cd RateMyGym
